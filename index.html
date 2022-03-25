@@ -11,8 +11,8 @@
 <body>
   <form>
     <label for="githubuser">Github user:</label><br>
-    <input type="text" id="githubuser" name="githubuser" placeholder="minion">
-    <input type="submit" value="Search">
+    <input id="writeUser" type="text" id="githubuser" name="githubuser" placeholder="minion" pattern="[a-zA-Z0-9]*">
+    <input id="button" type="submit" value="Search">
     
   </form> 
   
@@ -21,12 +21,14 @@
   </div>
 
   <table id="myTable">
-    <tr>
-      <th>Username</th>
-      <th>Avatar</th>
-      <th>Bio</th>
-      <th>HTML url</th>
-    </tr>
+    <tbody id="bodyTable">
+      <tr>
+        <th>Username</th>
+        <th>Avatar</th>
+        <th>Bio</th>
+        <th>HTML url</th>
+      </tr>
+    </tbody>
   </table>
 
   <script src="fetch.js"></script>
